@@ -1,0 +1,44 @@
+<form class="form" action="result" method="post">
+    <div>Lomakesetti
+    </div>
+            <div>
+                <span>Etunimi:</span>
+                <input type="text" name="etunimi">
+            </div>
+            <div>
+                <span>Sukunimi:</span>
+                <input type="text" name="sukunimi">
+            </div>
+            <div>
+                <span>Email:</span>
+                <input type="text" name="email">
+            </div>
+            <div>
+                <span>Onko avaruutta olemassa?</span><br>
+                <input type="radio" name="avaruus" value="kylla"> Kyllä<br>
+                <input type="radio" name="avaruus" value="ei"> Ei<br>
+                <input type="radio" name="avaruus" value="eos" Checked> En osaa sanoa
+            </div>
+
+            <div><input type="submit" name="submit" value="lähetä"></div>
+
+
+</form>
+<span>Magentosetti</span>
+<select form="kysely" name="magento" id="magento">
+    <option value="">-- Valitse --</option>
+    <?php
+/*
+    $products = Mage::getModel('catalog/product')->getCollection();
+    //Magento does not load all attributes by default
+    //Add as many as you like
+    $products->addAttributeToSelect('$this');
+    foreach($products as $product) {
+        //do something
+        echo "<option value='".$product['value']."'>";
+        echo $product['label'];
+        echo "</option>";
+    }
+
+    */?>
+</select>
